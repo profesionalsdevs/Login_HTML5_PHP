@@ -1,3 +1,11 @@
+body {
+    background-image: url("../img/12453.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
 /* LOGIN */
 div[name="login"] {    
     background-color: rgb(51, 153, 255);
