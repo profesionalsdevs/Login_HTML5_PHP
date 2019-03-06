@@ -117,6 +117,6 @@ button[name="register_data"]:hover {
     color: white;
 }
 
-.txtbox:hover {
+.txtbox:focus {
     border: 2px solid white;
 }
