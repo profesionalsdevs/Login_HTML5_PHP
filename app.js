@@ -22,4 +22,28 @@ $(document).ready(() => {
         e.preventDefault();
     });
 
+    $('#signup_form').submit((e) => {
+        const postData = {
+            first_name: $('#firstname').val(),
+            last_name: $('#lastname').val(),
+            username: $('#signup_username').val(),
+            password: $('#signup_password').val()
+        }
+
+        $.post('PHP/signup.php', postData, (response) => {
+            
+            $('#signup_form').trigger('reset');
+
+            console.log(response);
+
+            if (response === 1) {
+                alert('Registered successfully');
+            } else {
+                alert('Some thing is wrong');
+            }
+
+        });
+        e.preventDefault();
+    })
+
 });
