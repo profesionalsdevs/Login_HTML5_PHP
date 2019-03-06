@@ -49,7 +49,7 @@ button[name="login_data"] {
     color: rgb(51, 153, 255);
 }
 
-.login_data:hover {
+button[name="login_data"]:hover {
     background-color: black;
 }
 
