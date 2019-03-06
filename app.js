@@ -8,14 +8,15 @@ $(document).ready(() => {
 
         $.post('PHP/login.php', postData, (response) => {
             $('#login_form').trigger('reset');
+            
             console.log(response);
 
-            if (response === 1) {
+            /* if (response === 1) {
                 window.location = 'home.html';
             }
             else {
                 console.log('Something is wrong');
-            }
+            } */
         });
         e.preventDefault();
     });
