@@ -35,11 +35,17 @@ form#login_form {
 }
 
 .txtbox {
+    background: none;
     margin: 5px;
     padding: 5px;
-    border: 2px;
+    border: 2px solid black;
     border-radius: 10px;
     font-size: 12px;
+    color: white;
+}
+
+.txtbox:hover {
+    border: 2px solid white;
 }
 
 button[name="login_data"] {
