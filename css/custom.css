@@ -48,7 +48,7 @@ button[name="login_data"] {
     color: rgb(51, 153, 255);
 }
 
-.btn:hover {
+button[name="login_data"]:hover {
     background-color: black;
 }
 
@@ -92,4 +92,8 @@ button[name="register_data"] {
     text-align: center;
     font-size: 16px;
     color: rgb(51, 153, 255);
+}
+
+button[name="register_data"]:hover {
+    background-color: black;
 }
