@@ -3,7 +3,7 @@ $(document).ready(() => {
     $('#login_form').submit((e) => {
         const postData = {
             Username: $('#username'),
-            Password: $('#Password')
+            Password: $('#password')
         };
 
         $.post('PHP/login.php', postData, (response) => {
