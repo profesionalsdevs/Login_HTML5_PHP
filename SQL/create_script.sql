@@ -1,6 +1,4 @@
-CREATE DATABASE IF NOT EXISTS projects_tests CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-
-USE projects_tests;
+USE bnvlxxeiyqouvuwsye9r;
 
 CREATE TABLE IF NOT EXISTS users(
     ID              INT(11) AUTO_INCREMENT NOT NULL,
