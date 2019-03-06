@@ -37,13 +37,13 @@ form#login_form {
 
 button[name="login_data"] {
     background-color: white;
-    width: 90px;
+    width: 100px;
     border: 2px solid black;
-    border-radius: 8px;
+    border-radius: 24px;
     margin-top: 10px;
     padding: 2px 10px;
     position: relative;
-    left: 45px;
+    left: 40px;
     text-align: center;
     font-size: 16px;
     color: rgb(51, 153, 255);
@@ -84,13 +84,13 @@ form#register_form {
 }
 button[name="register_data"] {
     background-color: white;
-    width: 100px;
+    width: 110px;
     border: 2px solid black;
-    border-radius: 8px;
+    border-radius: 24px;
     margin-top: 10px;
     padding: 2px 10px;
     position: relative;
-    left: 40px;
+    left: 35px;
     text-align: center;
     font-size: 16px;
     color: rgb(51, 153, 255);
@@ -107,7 +107,7 @@ button[name="register_data"]:hover {
     margin: 5px;
     padding: 5px;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 24px;
     font-size: 14px;
     color: white;
     text-align: center;
