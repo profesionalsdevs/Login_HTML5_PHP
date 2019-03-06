@@ -26,6 +26,7 @@ div[name="login"] h2 {
     position: relative;
     left: 55px;
     margin: 5px;
+    text-transform: uppercase;
 }
 form#login_form {
     font-family: monospace;
@@ -34,29 +35,15 @@ form#login_form {
     left: 15px;
 }
 
-.txtbox {
-    background: none;
-    margin: 5px;
-    padding: 5px;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-size: 12px;
-    color: white;
-}
-
-.txtbox:hover {
-    border: 2px solid white;
-}
-
 button[name="login_data"] {
     background-color: white;
-    width: 60px;
+    width: 90px;
     border: 2px solid black;
     border-radius: 8px;
     margin-top: 10px;
     padding: 2px 10px;
     position: relative;
-    left: 55px;
+    left: 45px;
     text-align: center;
     font-size: 16px;
     color: rgb(51, 153, 255);
@@ -84,8 +71,9 @@ div[name="register"] h2 {
     font-family: monospace;
     font-size: 30px;
     position: relative;
-    left: 35px;
+    left: 30px;
     margin: 5px;
+    text-transform: uppercase;
 }
 
 form#register_form {
@@ -96,13 +84,13 @@ form#register_form {
 }
 button[name="register_data"] {
     background-color: white;
-    width: 80px;
+    width: 100px;
     border: 2px solid black;
     border-radius: 8px;
     margin-top: 10px;
     padding: 2px 10px;
     position: relative;
-    left: 45px;
+    left: 40px;
     text-align: center;
     font-size: 16px;
     color: rgb(51, 153, 255);
@@ -110,4 +98,25 @@ button[name="register_data"] {
 
 button[name="register_data"]:hover {
     background-color: black;
+}
+
+/* Class */
+.txtbox {
+    background: none;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+::placeholder {
+    color: white;
+}
+
+.txtbox:hover {
+    border: 2px solid white;
 }
