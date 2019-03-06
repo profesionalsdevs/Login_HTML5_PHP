@@ -1,5 +1,7 @@
 $(document).ready(() => {
 
+    alertify.set('notifier','position', 'top-center');
+
     $('#login_form').submit((e) => {
         const postData = {
             username: $('#username').val(),
@@ -13,10 +15,11 @@ $(document).ready(() => {
             console.log(response);
 
             if (response == 1) {
-                window.location = 'home.html';
+                alertify.success('Youre welcome');
+                /* window.location = 'home.html'; */
             }
             else {
-                console.log('Something is wrong');
+                alertify.success('Something is wrong');
             }
         });
         e.preventDefault();
@@ -37,9 +40,9 @@ $(document).ready(() => {
             console.log(response);
 
             if (response === 1) {
-                alert('Registered successfully');
+                alertify.success('Registered successfully');
             } else {
-                alert('Some thing is wrong');
+                alertify.success('Some thing is wrong');
             }
 
         });
