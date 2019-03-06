@@ -9,4 +9,10 @@ $connection = mysqli_connect(
     'projects_tests'//Nombre de la Base de datos (Recomendable usar el mismo nombre)
 );
 
+if ($connection) {
+    echo 'Database is OK';
+} else {
+    echo 'Something is wrong';
+}
+
 ?>
