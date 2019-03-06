@@ -9,7 +9,7 @@
     <!-- include the style -->
     <link rel="stylesheet" href="lib/alertifyjs/css/alertify.min.css" />
     <!-- include a theme -->
-    <link rel="stylesheet" href="ib/alertifyjs/css/themes/default.min.css" />
+    <link rel="stylesheet" href="lib/alertifyjs/css/themes/default.min.css" />
 
     <title>Login</title>
 </head>
@@ -18,12 +18,12 @@
     <!-- Form Login -->
     <div name="login">
         <h2>Login</h2>
-        <form id="login_form" action="PHP/connection.php" method="POST">
+        <form id="login_form">
             Username:<br>
             <input id="username" class="txtbox" type="text"><br>
             Password:<br>
             <input id="password" class="txtbox" type="password"><br>
-            <button name="login_data">Login</button><br>
+            <button class="login_data">Login</button><br>
         </form>
     </div>
 
@@ -43,11 +43,11 @@
         </form>
     </div>
 
+    <!-- include the script -->
+    <script src="lib/alertifyjs/alertify.min.js"></script>
     <!-- Link JQuery (Don't touch xD) -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!-- include the script -->
-    <script src="lib/alertifyjs/alertify.min.js"></script>
     <!-- Link Our app.js -->
     <script src="app.js"></script>
 </body>

@@ -42,7 +42,7 @@ form#login_form {
     font-size: 12px;
 }
 
-button[name="login_data"] {
+.login_data {
     background-color: white;
     width: 60px;
     border: 2px solid black;
@@ -56,7 +56,7 @@ button[name="login_data"] {
     color: rgb(51, 153, 255);
 }
 
-button[name="login_data"]:hover {
+.login_data:hover {
     background-color: black;
 }
 

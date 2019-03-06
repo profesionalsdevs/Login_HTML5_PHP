@@ -10,7 +10,7 @@ if (isset($_POST['first_name'])) {
 
     $query = 
     "INSERT INTO users (First_name, Last_name, Username, Password) 
-        VALUES ($first_name, $last_name, $username, $password)";
+        VALUES ('$first_name', '$last_name', '$username', '$password')";
     $result = mysqli_query($connection, $query);
 
     if ($result) {
