@@ -18,7 +18,7 @@ h1 {
     left: 60px;
     margin: 5px;
 }
-form#login {
+form#login_form {
     font-family: monospace;
     font-size: 14px;
     position: relative;
