@@ -18,27 +18,21 @@
     <!-- Form Login -->
     <div name="login">
         <h2>Login</h2>
-        <form id="login_form">
-            Username:<br>
-            <input id="username" class="txtbox" type="text"><br>
-            Password:<br>
-            <input id="password" class="txtbox" type="password"><br>
-            <button class="login_data">Login</button><br>
+        <form id="login_form" action="PHP/connection.php" method="POST">
+            <input id="username" class="txtbox" type="text" placeholder="Username"><br>
+            <input id="password" class="txtbox" type="password" placeholder="Password"><br>
+            <button name="login_data">Login</button><br>
         </form>
     </div>
 
     <!-- Form Register -->
     <div name="register">
         <h2>Register</h2>
-        <form id="register_form">
-            First Name:<br>
-            <input id="firname" class="txtbox" type="text"><br>
-            Last Name:<br>
-            <input id="lasname" class="txtbox" type="text"><br>
-            Username:<br>
-            <input id="usnamereg" class="txtbox" type="text"><br>
-            Password:<br>
-            <input id="passwreg" class="txtbox" type="password"><br>
+        <form id="register_form" action="PHP/signup.php" method="POST">
+            <input id="firname" class="txtbox" type="text" placeholder="First Name"><br>
+            <input id="lasname" class="txtbox" type="text" placeholder="Last Name"><br>
+            <input id="usnamereg" class="txtbox" type="text" placeholder="Username"><br>
+            <input id="passwreg" class="txtbox" type="password" placeholder="Password"><br>
             <button name="register_data">Register</button>
         </form>
     </div>
