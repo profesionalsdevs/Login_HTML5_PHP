@@ -7,7 +7,7 @@ body {
 }
 
 /* LOGIN */
-div[name="login"] {    
+div#div_login {    
     background-color: rgb(51, 153, 255);
     width: 200px;
     border: 5px solid black;
@@ -20,7 +20,7 @@ div[name="login"] {
     transform: translate(-35%, -50%);
 }
 
-div[name="login"] h2 {
+div#div_login h2 {
     font-family: monospace;
     font-size: 30px;
     position: relative;
@@ -35,7 +35,7 @@ form#login_form {
     left: 15px;
 }
 
-button[name="login_data"] {
+button#submit_login {
     background-color: white;
     width: 100px;
     border: 2px solid black;
@@ -49,12 +49,12 @@ button[name="login_data"] {
     color: rgb(51, 153, 255);
 }
 
-button[name="login_data"]:hover {
+button#submit_login:hover {
     background-color: black;
 }
 
 /* REGISTER */
-div[name="register"] {
+div#div_register {
     background-color: rgb(51, 153, 255);
     width: 200px;
     border: 5px solid black;
@@ -67,7 +67,7 @@ div[name="register"] {
     transform: translate(-60%, -50%);
 }
 
-div[name="register"] h2 {
+div#div_register h2 {
     font-family: monospace;
     font-size: 30px;
     position: relative;
@@ -82,7 +82,7 @@ form#register_form {
     position: relative;
     left: 15px;
 }
-button[name="register_data"] {
+button#submit_register {
     background-color: white;
     width: 110px;
     border: 2px solid black;
@@ -96,7 +96,7 @@ button[name="register_data"] {
     color: rgb(51, 153, 255);
 }
 
-button[name="register_data"]:hover {
+button#submit_register:hover {
     background-color: black;
 }
 
