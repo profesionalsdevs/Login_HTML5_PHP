@@ -25,17 +25,17 @@ $(document).ready(() => {
         e.preventDefault();
     });
 
-    $('#signup_form').submit((e) => {
+    $('#register_form').submit((e) => {
         const postData = {
-            first_name: $('#firstname').val(),
-            last_name: $('#lastname').val(),
-            username: $('#signup_username').val(),
-            password: $('#signup_password').val()
+            first_name: $('#firname').val(),
+            last_name: $('#lasname').val(),
+            username: $('#usnamereg').val(),
+            password: $('#passwreg').val()
         }
 
         $.post('PHP/signup.php', postData, (response) => {
             
-            $('#signup_form').trigger('reset');
+            $('#register_form').trigger('reset');
 
             console.log(response);
 
