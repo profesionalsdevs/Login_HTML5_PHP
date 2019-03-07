@@ -13,7 +13,7 @@ $(document).ready(() => {
         console.log(postData['username']);
         console.log(postData['password']);
 
-        $.post('login.php', postData, (response) => {
+        $.post('PHP/login.php', postData, (response) => {
             $('#login_form').trigger('reset');
             console.log(response);
 
@@ -36,7 +36,7 @@ $(document).ready(() => {
             r_passwreg: $('#r_passwreg').val()
         };
 
-        $.post('register.php', postData, (response) => {
+        $.post('PHP/register.php', postData, (response) => {
             
             $('#register_form').trigger('reset');
 
