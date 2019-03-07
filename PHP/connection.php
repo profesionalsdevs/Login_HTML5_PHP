@@ -9,10 +9,4 @@ $connection = mysqli_connect(
     'bnvlxxeiyqouvuwsye9r'//Nombre de la Base de datos (Recomendable usar el mismo nombre)
 );
 
-if ($connection) {
-    echo "DB ok";
-} else {
-    echo "Something is wrong with DB";
-}
-
 ?>

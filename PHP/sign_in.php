@@ -1,8 +1,6 @@
 <?php 
 
-/* require 'connection.php'; */
-
-echo "Hello";
+require 'connection.php';
 
 if (isset($_POST['username'])) 
 {
@@ -12,7 +10,9 @@ if (isset($_POST['username']))
     $query = "SELECT * FROM users WHERE Username = '$username' AND Password = '$password'";
     $result = mysqli_query($connection, $query);
 
-    var_dump($result);
+    $row = mysqli_fetch_assoc($result);
+
+    echo $row['Username'];
 
     if (mysqli_num_rows($result) > 0) 
     {
@@ -29,3 +29,5 @@ else
 {
     echo 'Dont work';
 }
+
+?>

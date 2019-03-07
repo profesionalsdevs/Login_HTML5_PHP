@@ -1,6 +1,6 @@
 $(document).ready(() => {
 
-    /* alertify.set('notifier','position', 'top-center'); */
+    alertify.set('notifier','position', 'top-center');
 
     $('#login_form').submit((e) => {
         const postData = {
@@ -8,10 +8,9 @@ $(document).ready(() => {
             password: $('#password').val()
         };
 
-        /* $.post('PHP/signin.php', postData, (response) => {
+        $.post('PHP/sign_in.php', postData, (response) => {
 
             $('#login_form').trigger('reset');
-
             console.log(response);
 
             if (response == 1) {
@@ -21,22 +20,7 @@ $(document).ready(() => {
             else {
                 alertify.success('Something is wrong');
             }
-        }); */
-
-        $.ajax({
-            type: "POST",
-            url: "PHP/signin.php",
-            data: postData,
-            success: function(r)
-            {
-                if (r == 1) {
-                    alertify.success('Youre welcome');
-                } else {
-                    alertify.error('Something is wrong');
-                }
-            }
-        })
-        
+        });
         e.preventDefault();
     });
 
@@ -48,9 +32,7 @@ $(document).ready(() => {
             password: $('#passwreg').val()
         };
 
-        console.log('Hello')
-
-        $.post('PHP/signup.php', postData, (response) => {
+        $.post('PHP/sign_up.php', postData, (response) => {
             
             $('#register_form').trigger('reset');
 
