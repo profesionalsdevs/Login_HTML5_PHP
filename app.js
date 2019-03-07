@@ -8,14 +8,18 @@ $(document).ready(() => {
             password: $('#password').val()
         };
 
-        $.post('PHP/sign_in.php', postData, (response) => {
+        console.log($('#username').val());
+        console.log($('#password').val());
+        console.log(postData['username']);
+        console.log(postData['password']);
 
+        $.post('login.php', postData, (response) => {
             $('#login_form').trigger('reset');
             console.log(response);
 
             if (response == 1) {
                 alertify.success('Youre welcome');
-                window.location = 'home.html';
+                window.location = "home.html";
             }
             else {
                 alertify.success('Something is wrong');
@@ -26,21 +30,24 @@ $(document).ready(() => {
 
     $('#register_form').submit((e) => {
         const postData = {
-            first_name: $('#firname').val(),
-            last_name: $('#lasname').val(),
-            username: $('#usnamereg').val(),
-            password: $('#passwreg').val()
+            r_firstname: $('#r_firstname').val(),
+            r_lasname: $('#r_lasname').val(),
+            r_usnamereg: $('#r_usnamereg').val(),
+            r_passwreg: $('#r_passwreg').val()
         };
 
-        $.post('PHP/sign_up.php', postData, (response) => {
+        $.post('register.php', postData, (response) => {
             
             $('#register_form').trigger('reset');
 
             console.log(response);
 
-            if (response == 1) {
+            if (response == 1) 
+            {
                 alertify.success('Registered successfully');
-            } else {
+            } 
+            else 
+            {
                 alertify.error('Something is wrong');
             }
 
