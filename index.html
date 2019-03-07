@@ -16,24 +16,24 @@
 
 <body>
     <!-- Form Login -->
-    <div name="login">
+    <div id="div_login" name="login">
         <h2>Login</h2>
         <form id="login_form" action="PHP/connection.php" method="POST">
             <input id="username" class="txtbox" type="text" placeholder="Username"><br>
             <input id="password" class="txtbox" type="password" placeholder="Password"><br>
-            <button name="login_data">Login</button><br>
+            <button id="submit_login" name="login_data">Login</button><br>
         </form>
     </div>
 
     <!-- Form Register -->
-    <div name="register">
+    <div id="div_register" name="register">
         <h2>Register</h2>
         <form id="register_form" action="PHP/signup.php" method="POST">
             <input id="firname" class="txtbox" type="text" placeholder="First Name"><br>
             <input id="lasname" class="txtbox" type="text" placeholder="Last Name"><br>
             <input id="usnamereg" class="txtbox" type="text" placeholder="Username"><br>
             <input id="passwreg" class="txtbox" type="password" placeholder="Password"><br>
-            <button name="register_data">Register</button>
+            <button id="submit_register" name="register_data">Register</button>
         </form>
     </div>
 
